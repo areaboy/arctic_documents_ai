@@ -62,6 +62,7 @@ text_prompt_data= st.text_area('Enter Text to Analyze' )
 
 #  Process Text Data
 def process_data(): 
+ os.environ['REPLICATE_API_TOKEN'] = replicate_api
  if replicate_api =='':
      st.markdown("**Replicate API token is empty**")
  elif text_prompt_data == "":  
@@ -72,7 +73,7 @@ def process_data():
     #   allow only alphanumeric characters, commas, dots, spaces
     data_regex = re.sub(r'[^A-Za-z0-9, .]', '', text_prompt_data)
 
-    text_prompt_data_process = "list all the Entities in  this text seperated by commas '" + data_regex + "'  "
+    text_prompt_data_process = "list all the Entities in  this text '" + data_regex + "'  "
 
     # st.write(f"{text_prompt_data_process}")
     os.environ['REPLICATE_API_TOKEN'] = replicate_api  
@@ -136,7 +137,7 @@ def process_data_docs(text_prompt_data_docs):
      #   allow only alphanumeric characters, commas, dots, spaces
     data_regex_docs = re.sub(r'[^A-Za-z0-9, .]', '', text_prompt_data_docs)
 
-    text_prompt_data_process = " list all the Entities in  this text seperated by commas '" + data_regex_docs + "'  "
+    text_prompt_data_process = " list all the Entities in  this text '" + data_regex_docs + "'  "
     os.environ['REPLICATE_API_TOKEN'] = replicate_api  
     # with st.spinner("please wait....."):      
     query = []
