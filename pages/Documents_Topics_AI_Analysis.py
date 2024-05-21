@@ -112,7 +112,7 @@ def process_data():
     html_string = f'''
     <div id="demo_res" ></div>
     <script language="javascript">
-          alert('Arctic AI Topics Analysis Successful. Please Scroll Up..');
+          alert('Arctic AI Topics Analysis Successful. Please Scroll Up the page to view Result...');
           let strx = '{data_regex2}';
          const output = "<div style='background:#ddd;color:black;padding:6px;border:none;border-radius:25%;margin:0.2%;display:inline-block;' onMouseOver=this.style.backgroundColor='orange'  onMouseOut=this.style.backgroundColor='#ddd' class='data_css'>" +
          strx.replace(/,/g, "</div><div style='background:#ddd;color:black;padding:6px;border:none;border-radius:25%;margin:0.2%;display:inline-block;' onMouseOver=this.style.backgroundColor='orange'  onMouseOut=this.style.backgroundColor='#ddd' class='data_css' >") +
@@ -180,7 +180,7 @@ def process_data_docs(text_prompt_data_docs):
         
     <div id="demo_res" ></div>
     <script language="javascript">
-          alert('Arctic AI Topics Analysis Successful. Please Scroll Up..');
+          alert('Arctic AI Topics Analysis Successful. Please Scroll Up the page to view Result...');
           let strx = '{data_regex2}';
          const output = "<div style='background:#ddd;color:black;padding:6px;border:none;border-radius:25%;margin:0.2%;display:inline-block;' onMouseOver=this.style.backgroundColor='orange'  onMouseOut=this.style.backgroundColor='#ddd' class='data_css'>" +
          strx.replace(/,/g, "</div><div style='background:#ddd;color:black;padding:6px;border:none;border-radius:25%;margin:0.2%;display:inline-block;' onMouseOver=this.style.backgroundColor='orange'  onMouseOut=this.style.backgroundColor='#ddd' class='data_css' >") +
