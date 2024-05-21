@@ -113,7 +113,7 @@ def process_data():
     html_string = f'''
 
     <script language="javascript">
-          alert('Arctic AI Sentimental Analysis Successful. Please Scroll Up..');
+          alert('Arctic AI Sentimental Analysis Successful. Please Scroll Up the page to view Result...');
     </script>
     
     '''
@@ -173,7 +173,7 @@ def process_data_docs(text_prompt_data_docs):
     html_string = f'''
         
     <script language="javascript">
-          alert('Arctic AI Sentimental Analysis Successful. Please Scroll Up..');
+          alert('Arctic AI Sentimental Analysis Successful. Please Scroll Up the page to view Result...');
     </script>
     
     '''
