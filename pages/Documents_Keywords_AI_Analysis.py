@@ -62,6 +62,7 @@ text_prompt_data= st.text_area('Enter Text to Analyze' )
 
 #  Process Text Data
 def process_data(): 
+ os.environ['REPLICATE_API_TOKEN'] = replicate_api
  if replicate_api =='':
      st.markdown("**Replicate API token is empty**")
  elif text_prompt_data == "":  
