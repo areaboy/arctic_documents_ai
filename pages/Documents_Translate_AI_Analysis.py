@@ -131,6 +131,7 @@ st.button('Translate Text', on_click=process_data)
 # Process PDF Text Documents
 
 def process_data_docs(text_prompt_data_docs, translate_to_docs): 
+ os.environ['REPLICATE_API_TOKEN'] = replicate_api
  if replicate_api =='':
      st.markdown("**Replicate API token is empty**")
  elif text_prompt_data_docs == "":  
