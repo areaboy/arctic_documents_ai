@@ -112,7 +112,7 @@ def process_data():
     html_string = f'''
     <div id="demo_res" ></div>
     <script language="javascript">
-          alert('Arctic AI Keywords Analysis Successful. Please Scroll Up..');
+          alert('Arctic AI Keywords Analysis Successful. Please Scroll Up the page to view Result...');
           let strx = '{data_regex2}';
          const output = "<div class='data_css'>" +
          strx.replace(/,/g, "</div><div  class='data_css' >") +
@@ -189,7 +189,7 @@ def process_data_docs(text_prompt_data_docs):
         
     <div id="demo_res" ></div>
     <script language="javascript">
-          alert('Arctic AI Keywords Analysis Successful. Please Scroll Up..');
+          alert('Arctic AI Keywords Analysis Successful. Please Scroll Up the page to view Result...');
           let strx = '{data_regex2}';
          const output = "<div class='data_css'>" +
          strx.replace(/,/g, "</div><div class='data_css' >") +
